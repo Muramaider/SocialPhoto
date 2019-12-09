@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G1012" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PostStorage" representedClassName="PostStorage" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="authorAvatar" optional="YES" attributeType="URI"/>
+        <attribute name="authorUsername" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="currentUserLikesThisPost" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="descript" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="URI"/>
+        <attribute name="likeByCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserStorage" representedClassName="UserStorage" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="URI"/>
+        <attribute name="currentUserFollowsThisUser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="currentUserIsFollowedByThisUser" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="followedByCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="followsCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="PostStorage" positionX="-308.22265625" positionY="111.5234375" width="128" height="178"/>
+        <element name="UserStorage" positionX="36" positionY="126" width="128" height="163"/>
+    </elements>
+</model>
